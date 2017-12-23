@@ -1,0 +1,42 @@
+
+:root {
+  
+  --primary-color: #546e7a;
+  --primary-light-color: #819ca9;
+  --primary-dark-color:#29434e;
+
+  --secondary-color: #263238;
+  --secondary-light-color: #4f5b62;
+  --secondary-dark-color: #000a12;
+}
+
+body {
+  background-color: var( --primary-light-color );
+}
+
+header {
+  height: 15vh;
+  line-height: 25vh;
+  background-color: var( --primary-color );
+  box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
+  text-indent: 210px;
+  font-size: 2rem;
+} 
+
+div.site-logo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  height: 85px;
+  width: 200px;
+  z-index: 1;
+}
+
+line {
+  stroke: black;
+  stroke-width: 2;
+}
+
+circle {
+  fill: var( --secondary-dark-color );
+}

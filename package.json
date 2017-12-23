@@ -1,0 +1,22 @@
+{
+  "name": "blackabacus",
+  "version": "1.0.0",
+  "description": "A site where I can test new features for all web technologies",
+  "license": "MIT",
+  "private": true,
+  "author": "Quinn Peters",
+  "repository": "",
+  "scripts": {
+    "start": "brunch watch --server",
+    "build": "brunch build --production"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "auto-reload-brunch": "^2",
+    "babel-brunch": "~6.0",
+    "babel-preset-latest": "^6",
+    "brunch": "^2.10.12",
+    "clean-css-brunch": "^2",
+    "uglify-js-brunch": "^2"
+  }
+}
