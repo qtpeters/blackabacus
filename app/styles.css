@@ -1,13 +1,24 @@
 
 :root {
   
-  --primary-color: #546e7a;
+  --primary-color: rgba( 84, 110, 122, 1 );
+  --primary-color-transp: rgba( 84, 110, 122, 0 );
   --primary-light-color: #819ca9;
-  --primary-dark-color:#29434e;
+  --primary-dark-color: #29434e;
 
   --secondary-color: #263238;
   --secondary-light-color: #4f5b62;
   --secondary-dark-color: #000a12;
+}
+
+@font-face {
+   font-family: BlackThornsBlack;
+   src: url( bt-black.ttf ) format( "truetype" );
+}
+
+@font-face {
+   font-family: BlackThornsRegular;
+   src: url( bt-regular.ttf ) format( "truetype" );
 }
 
 body {
@@ -16,25 +27,47 @@ body {
 
 header {
   height: 15vh;
-  line-height: 25vh;
   background-color: var( --primary-color );
+  background-image: url( tribal.png );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
   box-shadow: 3px 3px 3px rgba( 0, 0, 0, 0.75 );
-  text-indent: 210px;
-  font-size: 2rem;
 } 
 
-div.site-logo {
-  position: absolute;
-  top: 10px;
-  left: 20px;
-  height: 85px;
-  width: 200px;
-  z-index: 1;
+div.logo-container {
+  display: flex;
+  flex-direction: row; 
 }
 
-line {
+div.logo-text {
+  font-size: 10vh;
+  padding-top: 5vh;
+  width: 100%;
+  font-family: BlackThornsRegular;
+  color: var( --primary-light-color );
+  text-shadow: 2px 2px var( --secondary-dark-color );
+  background-image: linear-gradient( 
+    to right,
+    var( --primary-color ), 
+    var( --primary-color-transp ) 
+  );
+}
+
+div.site-logo {
+  height: 100%;
+  width: 100px;
+  background-color: var( --primary-color );
+}
+
+line.beadline {
   stroke: black;
   stroke-width: 2;
+}
+
+line.edgeline {
+  stroke: black;
+  stroke-width: 4;
 }
 
 circle {
