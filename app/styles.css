@@ -22,7 +22,13 @@
 }
 
 body {
-  background-color: var( --primary-light-color );
+  /*background-color: var( --primary-light-color );*/
+  background: linear-gradient( 
+    rgba( 129, 156, 169, 0.9 ), 
+    rgba( 129, 156, 169, 0.9 ) 
+  ), url( abacus.jpg );
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 header {
