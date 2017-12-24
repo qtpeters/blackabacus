@@ -13,20 +13,19 @@
 
 @font-face {
    font-family: BlackThornsBlack;
-   src: url( bt-black.ttf ) format( "truetype" );
+   src: url( /css/fonts/bt-black.ttf ) format( "truetype" );
 }
 
 @font-face {
    font-family: BlackThornsRegular;
-   src: url( bt-regular.ttf ) format( "truetype" );
+   src: url( /css/fonts/bt-regular.ttf ) format( "truetype" );
 }
 
 body {
-  /*background-color: var( --primary-light-color );*/
   background: linear-gradient( 
     rgba( 129, 156, 169, 0.9 ), 
     rgba( 129, 156, 169, 0.9 ) 
-  ), url( abacus.jpg );
+  ), url( /css/images/abacus.jpg );
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -34,7 +33,7 @@ body {
 header {
   height: 15vh;
   background-color: var( --primary-color );
-  background-image: url( tribal.png );
+  background-image: url( /css/images/tribal.png );
   background-repeat: no-repeat;
   background-size: contain;
   background-position: left center;
